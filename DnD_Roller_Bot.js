@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-console.log("Fuck this");
 
 var bodyPart = ["Cock and Balls", "Ass", "Big ol Kankles", "Roblox Head", "Pee Pee"];
 var adjective = ["hairy and", "extremely", "insultingly", "astonishingly"];
@@ -67,7 +66,7 @@ client.on("message", function (message) {
 
             message.channel.send("Ok!");
             if (totalRoll === -1) {
-                message.channel.send("Input a correct value dumbass. Not Pog :rofl:");
+                //message.channel.send("Input a correct value dumbass. Not Pog :rofl:");
             }
             else {
                 message.channel.send("You rolled " + message.content + " totalling: " + sum);
@@ -93,18 +92,6 @@ function MinusFinder(x) {
         return false;
     }
 }
-
-const readline = require('readline');
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-rl.question('What do you think of Node.js? ', (answer) => {
-    // TODO: Log the answer in a database
-    console.log(`Thank you for your valuable feedback: ${answer}`);
-});
-
 
 function Splitter(x) {
     let y = Math.floor(Math.random() * x + 1);
